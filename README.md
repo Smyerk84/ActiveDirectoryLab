@@ -24,11 +24,15 @@ Turn on the new virtual machine created inside Hyper-V and setup Windows Server 
 <img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
+Install updates for Windows Server 2019: <br/>
+<img src=/>
+<br />
+<br />
 Setup IP Addressing: <br/>
 <img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Confirm your selection:  <br/>
+Change the name of this PC:  <br/>
 <img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
