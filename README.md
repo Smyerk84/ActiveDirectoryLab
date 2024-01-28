@@ -1,12 +1,12 @@
 <h1>Active Directory Home Lab</h1>
 
 <h2>Description</h2>
-In this project, we're going to walk through how to create an active directory home lab enviroment using Windows Hyper-V. Configuring and running this lab will definitely help develop our understanding of how active directory and windows networking works.
+In this project, we're going to walk through how to create an active directory home lab enviroment using Oracle Virtual Box. Configuring and running this lab will definitely help develop our understanding of how active directory and windows networking works.
 
 <h2>Languages and Utilities Used</h2>
 
 - <b>PowerShell</b> 
-- <b>Windows Hyper-V</b>
+- <b>Oracle Virtual Box</b>
 
 <h2>Environments Used</h2>
 
