@@ -7,7 +7,7 @@ In this project, we're going to walk through how to create an active directory h
 Download and install Oracle Virtual Box. Download and install Windows 10 and Windows Server 2019 ISO. Create our first virtual machine that will be our Domain Controller and house active directory. Give it two network adapters: one to connect to the outside internet and one used to connect to the virtual box private network that the clients will connect to. Install Server 2019 on virtual machine(DC) and assign IP addressing for the internal network. The external will automatically get IP addressing from our home network/router. Name the server, create AD, and name the domain. Configure NAT and Routing so the clients on the private network can reach the internet on the DC. Setup DHCP on DC so that when we create our Win 10 machine it can automatically get an IP address. Run a powershell script that will automatically create 1k users in AD. Create another virtual machine and install Win 10. This virtual machine will be connected to the private Virtual Box network. 
 
 <h2>Notes</h2>
-For this lab ONLY we will use Password1 for everything password related. Right Ctrl, delete is our default Ctrl Alt Del to sign into Server 19. 
+For this lab ONLY we will use Password1 for everything password related, do not use in real life. Right Ctrl, delete is our default Ctrl Alt Del to sign into Server 19. 
 
 
 
@@ -48,9 +48,10 @@ Configure Virtual Machine(DC): Note: Bidirectional shared clipboard in advanced 
 <img src="https://i.imgur.com/r3UofDE.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
 <br />
 <br />
-Install Server 2019 ISO file onto DC VM, setup and sign into server NOTE: Select the desktop experience for GUI and select custom install<br/>
+Install Server 2019 ISO file onto DC VM, setup and sign into server. NOTE: Select the desktop experience for GUI and select custom install. After signing into server and for ease of use go to devices and select insert guest additions CD image. Next, on the desktop go to file explorer/this pc and select Virtual Box guest additions that's listed as a drive. Finally, click on and run VBoxWindowsadditions.amd64 and follow the on screen prompts all the way until choosing to reboot now or later; click on reboot later<br/>
 <img src="https://i.imgur.com/VvcFqfW.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
 <img src="https://i.imgur.com/8UVrevd.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
+ <img src="https://i.imgur.com/dGSEd7z.png" height="80%" width="80%" alt="AD Lab Creation Steps"/> 
 <br />
 <br />
 Change the name of this PC:  <br/>
