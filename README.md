@@ -32,8 +32,8 @@ Download and install Microsoft Windows Server 2019 ISO file: <br/>
 <img src="https://i.imgur.com/lO32tVp.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
 <br />
 <br />
-Turn on the new virtual machine created inside Virtual Box and setup Windows Server 2019:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Download and install Microsoft Windows 10 ISO file:  <br/>
+<img src="https://i.imgur.com/1kzAfnw.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
 <br />
 <br />
 Install updates for Windows Server 2019: <br/>
