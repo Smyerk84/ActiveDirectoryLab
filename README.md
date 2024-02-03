@@ -63,7 +63,8 @@ Rename (R click) the Ethernet adapter that is connected to the internet _INTERNE
 <br />
 In the general tab use the following address: IP=172.16.0.1 Subnet Mask=255.255.255.0 Default Gateway=Leave blank related to the DC serving as the default gateway. DNS=127.0.0.1 or 172.16.0.1 (Once AD is installed it will automatically install DNS. We can either enter its own IP address 172.16.0.1 or we can enter the loopback address which is 127.0.0.1) Loopback address in IPv4 (127.0.0.1) is a generic address that never reaches the network but instead is looped back through the internal NIC. It allows for a reliable method of testing the functionality of an Ethernet card and its drivers and software without a physical network. <br/>
 <img src="https://i.imgur.com/NFje08v.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
- 
+<br />
+<br /> 
 Rename this VM by R clicking on the window icon at desktop and selecting system. Next, click on rename this PC and give it the name DC (Domain Controller) and restart PC. <br/>
 <img src="https://i.imgur.com/XyKoo8S.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
 <img src="https://i.imgur.com/ozbsC4K.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
