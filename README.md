@@ -9,15 +9,12 @@ Download and install Oracle Virtual Box. Download and install Windows 10 and Win
 <h2>Notes</h2>
 For this lab ONLY we will use Password1 for everything password related, do not use in real life. Right Ctrl, delete is our default Ctrl Alt Del to sign into Server 19. 
 
-
-
 <h2>Languages and Utilities Used</h2>
 
 - <b>PowerShell</b> 
 - <b>Oracle Virtual Box</b>
 - <b>Windows Server 19 ISO</b>
-- <b>Windows 10 ISO</b>
-  
+- <b>Windows 10 ISO</b>  
 
 <h2>Environments Used</h2>
 
@@ -54,12 +51,13 @@ Install Server 2019 ISO file onto DC VM, setup and sign into server. NOTE: Selec
 <br />
 <br />
 Setup IP addressing. Change network adapter settings. NOTE: We will start out by selecting the Ethernet that is connected to the internet and view its status by right clicking on it. In this lab it was Ethernet 2 for me, but just make sure you select the adapter that is the opposite of the one that is unrecognized  <br/>
-<img src="https://i.imgur.com/curRwD6.png" height="80%" width="80%" alt="Lab Creation Steps"/>
-<img src="https://i.imgur.com/f7girLW.png" height="80%" width="80%" alt="Lab Creation Steps"/>
+<img src="https://i.imgur.com/curRwD6.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
+<img src="https://i.imgur.com/f7girLW.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Rename (R click) the Ethernet adapter that is connected to the internet _INTERNET_ and rename the unrecogninzed adapter X_INTERNAL_X. NOTE: The unrecognized adapter will have an APIPA address (will start with 169.254.) This APIPA address was automatically assigned to this adapter because a DHCP server was not available. This is how you will know it's the internal adapter. <br/>
+<img src="https://i.imgur.com/NQABNho.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
+<img src="https://i.imgur.com/eD7mrn2.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
 <br />
 <br />
 Sanitization complete:  <br/>
