@@ -58,7 +58,7 @@ Setup IP addressing. Change network adapter settings. NOTE: We will start out by
 Rename (R click) the Ethernet adapter that is connected to the internet _INTERNET_ and rename the unrecogninzed adapter X_INTERNAL_X. NOTE: The unrecognized adapter will have an APIPA address (will start with 169.254.) This APIPA address was automatically assigned to this adapter because a DHCP server was not available. This is how you will know it's the internal adapter. Next R click on X_INTERNAL_X and go to properties. In the menu, double click Internet Protocol Version 4. This will bring you to its general tab where you can assign IP addressing.  <br/>
 <img src="https://i.imgur.com/eD7mrn2.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
 <img src="https://i.imgur.com/NQABNho.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
-<img src="https://i.imgur.com/QNZebTD.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
+<img src="https://i.imgur.com/f48vUDy.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
 <br />
 <br />
 In the general tab use the following address: IP=172.16.0.1 Subnet Mask=255.255.255.0 Default Gateway=Leave blank related to the DC serving as the default gateway. DNS=127.0.0.1 or 172.16.0.1 (Once AD is installed it will automatically install DNS. We can either enter its own IP address 172.16.0.1 or we can enter the loopback address which is 127.0.0.1) Loopback address in IPv4 (127.0.0.1) is a generic address that never reaches the network but instead is looped back through the internal NIC. It allows for a reliable method of testing the functionality of an Ethernet card and its drivers and software without a physical network. <br/>
