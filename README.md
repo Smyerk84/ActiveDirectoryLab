@@ -70,22 +70,20 @@ Rename this VM by R clicking on the window icon at desktop and selecting system.
 <img src="https://i.imgur.com/ozbsC4K.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
 <br />
 <br />
-Install Active Directory Domain Services. Within Server Manager, click on add roles or features.   <br/>
+Install Active Directory Domain Services. Within Server Manager, click on add roles or features. Click next on the add roles or features wizard until you come to the option where you see your DC server and its address; click on this server. In the list of checkboxes, check the box that says Active Directory Domain Services and click on add features. Finally, click next on the installation wizard and then lastly click on install so the AD DS will begin to install. This installation may take a while. When it's finished, close out the wizard. You should now notice a yellow exclamation point next to a flag in the top right hand corner of your server manager window. Click on this and select 'promote this server to a domain controller.' This is called a post deployment configuration. We have installed AD DS but now we will configure it.   <br/>
 <img src="https://i.imgur.com/mDVjYKn.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
-<img src="" height="80%" width="80%" alt="AD Lab Creation Steps"/>
-<img src="" height="80%" width="80%" alt="AD Lab Creation Steps"/>
-<img src="" height="80%" width="80%" alt="AD Lab Creation Steps"/>
+<img src="https://i.imgur.com/JeZeF1m.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
+<img src="https://i.imgur.com/sjtVuvF.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
+<img src="https://i.imgur.com/vEsFmIp.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
+<img src="https://i.imgur.com/0V430IO.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
 
+Installing AD DS 'Continued'...Next, within the configuration wizard click on add a new forest and name the root domain name mydomain.com. 'You could name this whatever you'd like.' Click next on the wizard and in the password field we will use Password1 as previously stated. Again, DO NOT use this authentication method in real life. Click next within the wizard until you get to the installation option and install AD DS. Our VM DC will automatically restart after this installation. 
+<img src="https://i.imgur.com/oie6aBs.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
+<img src="https://i.imgur.com/sVRkN7M.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
+<img src="https://i.imgur.com/GI3ATmJ.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
 
-
-
-
-
-
-
-
-
- 
+<br />
+<br /> 
 </p>
 
 <!--
