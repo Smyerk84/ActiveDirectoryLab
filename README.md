@@ -7,7 +7,7 @@ In this project, we're going to walk through how to create an active directory h
 Download and install Oracle Virtual Box. Download and install Windows 10 and Windows Server 2019 ISO. Create our first virtual machine that will be our Domain Controller and house active directory. Give it two network adapters: one to connect to the outside internet and one used to connect to the virtual box private network that the clients will connect to. Install Server 2019 on virtual machine(DC) and assign IP addressing for the internal network. The external will automatically get IP addressing from our home network/router. Name the server, create AD, and name the domain. Configure NAT and Routing so the clients on the private network can reach the internet on the DC. Setup DHCP on DC so that when we create our Win 10 machine it can automatically get an IP address. Run a powershell script that will automatically create 1k users in AD. Create another virtual machine and install Win 10. This virtual machine will be connected to the private Virtual Box network. 
 
 <h2>Notes</h2>
-For this lab ONLY we will use Password1 for everything password related, do not use in real life. Right Ctrl, delete is our default Ctrl Alt Del to sign into Server 19. Host Key (R ctrl) + home will bring up a menu bar where you can customize screen mode etc. VM=Virtual Machine. APIPA=Automatic Private IP Addressing. DNS=Domain Name System. AD=Active Directory. AD DS=Active Directory Domain Services. NIC=Network Interface Card
+For this lab ONLY we will use Password1 for everything password related, do not use in real life. Right Ctrl, delete is our default Ctrl Alt Del to sign into Server 19. Host Key (R ctrl) + home will bring up a menu bar where you can customize screen mode etc. VM=Virtual Machine. APIPA=Automatic Private IP Addressing. DNS=Domain Name System. AD=Active Directory. AD DS=Active Directory Domain Services. NIC=Network Interface Card. OU=Organizational Unit
 
 <h2>Languages and Utilities Used</h2>
 
@@ -75,19 +75,25 @@ Install Active Directory Domain Services. Within Server Manager, click on add ro
 <img src="https://i.imgur.com/JeZeF1m.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
 <img src="https://i.imgur.com/sjtVuvF.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
 <img src="https://i.imgur.com/vEsFmIp.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
-<img src="https://i.imgur.com/0V430IO.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
-
+<img src="https://i.imgur.com/0V430IO.png" height="80%" width="80%" alt="AD Lab Creation Steps"/><br />
+<br />
+<br /> 
 Installing AD DS 'Continued'...Next, within the configuration wizard click on add a new forest and name the root domain name mydomain.com. 'You could name this whatever you'd like.' Click next on the wizard and in the password field we will use Password1 as previously stated. Again, DO NOT use this authentication method in real life. Click next within the wizard until you get to the installation option and install AD DS. Our VM DC will automatically restart after this installation. </br>
 <img src="https://i.imgur.com/oie6aBs.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
 <img src="https://i.imgur.com/sVRkN7M.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
-<img src="https://i.imgur.com/GI3ATmJ.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
-
+<img src="https://i.imgur.com/GI3ATmJ.png" height="80%" width="80%" alt="AD Lab Creation Steps"/> 
 <br />
 <br /> 
-
-We will now create our own dedicated Admin account. You will notice now that your Windows Server login screen looks different and says MYDOMAIN/Admin. Go ahead and login with our PW.  </br>
+We will now create our own dedicated Admin account. You will notice now that your Windows Server login screen looks different and says MYDOMAIN/Admin. Go ahead and login with our PW. To do this go to start/Windows admintools/AD users and computers. Within the AD users and computers tab right click on mydomain.com 'this is what we named our domain earlier.' and click on new/organizational unit. Name this OU _ADMINS and uncheck the default box underneath. </br>
 
 <img src="https://i.imgur.com/6eQWJ2U.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
+<img src="https://i.imgur.com/lc5gtIN.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
+<img src="https://i.imgur.com/nug9iHA.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
+<img src="" height="80%" width="80%" alt="AD Lab Creation Steps"/>
+
+<br />
+<br />
+
 </p>
 
 <!--
