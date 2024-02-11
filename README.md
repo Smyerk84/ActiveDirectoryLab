@@ -84,15 +84,20 @@ Installing AD DS 'Continued'...Next, within the configuration wizard click on ad
 <img src="https://i.imgur.com/GI3ATmJ.png" height="80%" width="80%" alt="AD Lab Creation Steps"/> 
 <br />
 <br /> 
-We will now create our own dedicated Admin account. You will notice now that your Windows Server login screen looks different and says MYDOMAIN/Admin. Go ahead and login with our PW. To do this go to start/Windows admintools/AD users and computers. Within the AD users and computers tab right click on mydomain.com 'this is what we named our domain earlier.' and click on new/organizational unit. Name this OU _ADMINS and uncheck the default box underneath. </br>
+We will now create our own dedicated Admin account. You will notice now that your Windows Server login screen looks different and says MYDOMAIN/Admin. Go ahead and login with our PW. To do this go to start/Windows admintools/AD users and computers. Within the AD users and computers tab right click on mydomain.com 'this is what we named our domain earlier.' and click on new/organizational unit. This of OU as a folder within AD. Name this OU _ADMINS and uncheck the default box underneath. This will create a new folder within mydomain.com. Our newly created folder will now show under the expansion of mydomain.com. R click on this folder and select new/user. Enter your name in the first and last name column. For username we will use a- first letter of your first name and full last name; all lower case. This signifies it's an admin account 'a' and identifies the user by first initial and last name. Click next and use our same PW as planned. Uncheck 'user must change PW at next login and do check 'PW never expires' related to this being a lab environment. Click next and finally click finish. We will now see our newly created account under _ADMINS, BUT..we still need to actually make this an Admin account. To do that R click the profile and go to properties/member of and click on ADD. Next, type in the box provided domain admins and click on check names; there we will see it resolves to Domain Admins. Finally, click on okay and apply. NOW, we have our very own domain admin account. To use, log out and back into DC VM. Instead of using our MYDOMAIN/Admin account click on other user and we will notice at the bottom it now says 'sign into mydomain.' For this username we will use our newly created a- first letter of your first name and full last name and again we will use our PW previously stated. </br>
 
 <img src="https://i.imgur.com/6eQWJ2U.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
 <img src="https://i.imgur.com/lc5gtIN.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
 <img src="https://i.imgur.com/nug9iHA.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
-<img src="" height="80%" width="80%" alt="AD Lab Creation Steps"/>
+<img src="https://i.imgur.com/wvQJCWz.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
+<img src="https://i.imgur.com/5qmGqPe.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
+<img src="https://i.imgur.com/qSNV2S5.png" height="80%" width="80%" alt="AD Lab Creation Steps"/>
+<img src="https://i.imgur.com/b0ZsEjj.png" height="80%" width="80%" alt="AD Lab Creation Steps"/> 
+<img src="https://i.imgur.com/Dpdjdce.png" height="80%" width="80%" alt="AD Lab Creation Steps"/> 
+<img src="https://i.imgur.com/3ABHWMH.png" height="80%" width="80%" alt="AD Lab Creation Steps"/> 
+<br />
+<br />
 
-<br />
-<br />
 
 </p>
 
