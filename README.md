@@ -7,7 +7,7 @@ In this project, we're going to walk through how to create an active directory h
 Download and install Oracle Virtual Box. Download and install Windows 10 and Windows Server 2019 ISO. Create our first virtual machine that will be our Domain Controller and house active directory. Give it two network adapters: one to connect to the outside internet and one used to connect to the virtual box private network that the clients will connect to. Install Server 2019 on virtual machine(DC) and assign IP addressing for the internal network. The external will automatically get IP addressing from our home network/router. Name the server, create AD, and name the domain. Configure NAT and Routing so the clients on the private network can reach the internet on the DC. Setup DHCP on DC so that when we create our Win 10 machine it can automatically get an IP address. Run a powershell script that will automatically create 1k users in AD. Create another virtual machine and install Win 10. This virtual machine will be connected to the private Virtual Box network. 
 
 <h2>Notes</h2>
-For this lab ONLY we will use Password1 for everything password related, do not use in real life. Right Ctrl, delete is our default Ctrl Alt Del to sign into Server 19. Host Key (R ctrl) + home will bring up a menu bar where you can customize screen mode etc. VM=Virtual Machine. APIPA=Automatic Private IP Addressing. DNS=Domain Name System. AD=Active Directory. AD DS=Active Directory Domain Services. NIC=Network Interface Card. OU=Organizational Unit
+For this lab ONLY we will use Password1 for everything password related, do not use in real life. Right Ctrl, delete is our default Ctrl Alt Del to sign into Server 19. Host Key (R ctrl) + home will bring up a menu bar where you can customize screen mode etc. As this lab progresses and about at the halfway poing we will assume the user is becoming familiar with Win19 server and server manager with enough repetitions so we will decrease the number of screenshots for visual aid but still give a full typed walk though. VM=Virtual Machine. APIPA=Automatic Private IP Addressing. DNS=Domain Name System. AD=Active Directory. AD DS=Active Directory Domain Services. NIC=Network Interface Card. OU=Organizational Unit. RAS=Remote Access Server. NAT=Network Address Translation
 
 <h2>Languages and Utilities Used</h2>
 
@@ -97,6 +97,7 @@ We will now create our own dedicated Admin account. You will notice now that you
 <img src="https://i.imgur.com/3ABHWMH.png" height="80%" width="80%" alt="AD Lab Creation Steps"/> 
 <br />
 <br />
+Install RAS/NAT. This will allow our future Windows 10 cleint to be on the private virtual network but still be able to access the internet through the DC. Within server manager click on add roles and features. Click next and confirm server in the box. Checkmark the box that says remote access. Click next and so checkmark the box that says routing. And click next all the way to install and click that. 
 
 
 </p>
