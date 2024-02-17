@@ -234,7 +234,13 @@ Add users to AD using our PowerShell script. First, make a configuration that le
 
 <br />
 
-PowerShell script continued...
+PowerShell script continued...(RESERVED FOR PS SCRIPT EXPLANATION) Next, we will navigate within the PS command line to where the actual script is at on our drive. So, at the command line type in or navigate to c:\users\a-'first letter of your first name and then last name\desktop\AD_PS-master\ and press enter. You will now be in that directory. If you type in ls at the command line you can see its contents. Now, click 'run script' (f5) at the action tab within PS 'it looks like a green play button.' at select 'run once' when the message comes up. This will now create one thousand users in AD. Pull up Active Directory Users and Computers through Admin tools by clicking the start button within DC desktop and you will now notice there is now a _USERS section under mydomain.com. 
+
+<img src="https://i.imgur.com/RFIIgBP.png" width="80%" alt="AD Lab Creation Steps"/>  
+
+<img src="https://i.imgur.com/kLXHYWj.png" width="80%" alt="AD Lab Creation Steps"/>  
+
+
 
 
 
