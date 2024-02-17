@@ -16,7 +16,7 @@ Download and install Oracle Virtual Box. Download and install Windows 10 and Win
 
 <h2>Notes</h2> 
 
-For this lab ONLY we will use Password1 for everything password related, do not use in real life. Right Ctrl, delete is our default Ctrl Alt Del to sign into Server 19. Host Key (R ctrl) + home will bring up a menu bar where you can customize screen mode etc. As this lab progresses and about the halfway point, we will assume the user is becoming familiar with Win19 server and server manager with enough repetitions so we will decrease the number of screenshots for visual aid but still give a full typed walk though. VM=Virtual Machine. APIPA=Automatic Private IP Addressing. DNS=Domain Name System. AD=Active Directory. AD DS=Active Directory Domain Services. NIC=Network Interface Card. OU=Organizational Unit. RAS=Remote Access Server. NAT=Network Address Translation 
+For this lab ONLY we will use Password1 for everything password related, do not use in real life. Right Ctrl, delete is our default Ctrl Alt Del to sign into Server 19. Host Key (R ctrl) + home will bring up a menu bar where you can customize screen mode etc. As this lab progresses and about the halfway point, we will assume the user is becoming familiar with Win19 server and server manager with enough repetitions so we will decrease the number of screenshots for visual aid but still give a full typed walk though. <b>PowerShell script to create users sourcecode=github.com/joshmadakor1/AD_PS/archive/master.zip</b>. We will later use this source code address to type in DC's Internet Explorer so we can unzip it in DC's desktop for use. IE=Internet Explorer VM=Virtual Machine. APIPA=Automatic Private IP Addressing. DNS=Domain Name System. AD=Active Directory. AD DS=Active Directory Domain Services. NIC=Network Interface Card. OU=Organizational Unit. RAS=Remote Access Server. NAT=Network Address Translation 
 
   
 
@@ -224,17 +224,17 @@ Install DHCP server on DC. This will let our future Win10 clients get an IP addr
 
 <br /> 
 
-Add users to AD using our PowerShell script. First, make a configuration that lets us browse the internet from the DC. We would not usually do this in a production environment but in this lab it is fine. Within server manager click on configure this local server. Find IE enhanced security configuration and click on its icon. We will turn this off for Admins and users. The rationale is if this is left on it will spam us with warning messages every time a new page loads.  
+Add users to AD using our PowerShell script. First, make a configuration that lets us browse the internet from the DC. We would not usually do this in a production environment but in this lab it is fine. Within server manager click on configure this local server. Find IE enhanced security configuration and click on its icon. We will turn this off for Admins and users. The rationale is if this is left on it will spam us with warning messages every time a new page loads. Within DC's desktop page, open up Internet Explorer. Click okay for recommended settings. Next, in IE's address bar type in our sourcecode zip file included in this practice lab's notes in the introduction. For reference, this zip file location is github.com/joshmadakor1/AD_PS/archive/master.zip. You can copy and paste this in IE if you'd like. Once enterened press enter. A new box will appear asking if you want to open or save this file. We will click its dropdown menu and select 'save as'. A new box will appear; click desktop as where we want to save this file and finally click on save. Minimize all your open windows and go back to your home desktop of DC. Double click this newly downloaded file and drag and drop 'AD_PS-Master' onto DC's desktop. Double click this new file you dragged and dropped onto DC's desktop and select 'names.' This is a plain text file that has one thousand randomized names. We will use this file to programmatically create new users. Next, maximize this list of names within this file so we can better see what we're doing; 'for me, the combination of L ctrl and + on my keyboard made the text bigger with - doing the opposite.' At the very top of this list and for realism, type in your first and last name. Click on file and save; close notepad. Next, within DC's desktop click on start and select Windows Powershell drop down arrow; R click Windows Powershell ISE and then go to more and select 'run as administrator.' Click next and this should open up a new PowerShell box. 
 
   
 
 <img src="https://i.imgur.com/Ru5bNq9.png" width="80%" alt="AD Lab Creation Steps"/>  
 
-<img src="" width="80%" alt="AD Lab Creation Steps"/>  
+<img src="https://i.imgur.com/JmCKbh2.png" width="80%" alt="AD Lab Creation Steps"/>  
 
-<img src="" width="80%" alt="AD Lab Creation Steps"/>  
+<img src="https://i.imgur.com/3qHhgdQ.png" width="80%" alt="AD Lab Creation Steps"/>  
 
-<img src="" width="80%" alt="AD Lab Creation Steps"/>  
+<img src="https://i.imgur.com/VFFPCmi.png" width="80%" alt="AD Lab Creation Steps"/>  
 
   
 
