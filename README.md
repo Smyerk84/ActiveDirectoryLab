@@ -234,11 +234,22 @@ Add users to AD using our PowerShell script. First, make a configuration that le
 
 <br />
 
-PowerShell script continued...(RESERVED FOR PS SCRIPT EXPLANATION) Next, we will navigate within the PS command line to where the actual script is at on our drive. So, at the command line type in or navigate to c:\users\a-'first letter of your first name and then last name\desktop\AD_PS-master\ and press enter. You will now be in that directory. If you type in ls at the command line you can see its contents. Now, click 'run script' (f5) at the action tab within PS 'it looks like a green play button.' at select 'run once' when the message comes up. This will now create one thousand users in AD. If you see error messages, this is more than likely because there are duplicates within the plain text name file; not to worrk, the script should run fine. Pull up Active Directory Users and Computers through Admin tools by clicking the start button within DC desktop and you will now notice there is now a _USERS section under mydomain.com. Next, let us search for ourselves within these new users. Within AD Users and Computers, R click on mydomain.com and select find. Type in your name in our previously mentioned format and press find now. You should see your user account. You can also type in just your last name and see yourself as well in our previously created admin account. Good job. 
+PowerShell script continued...(RESERVED FOR PS SCRIPT EXPLANATION) Next, we will navigate within the PS command line to where the actual script is at on our drive. So, at the command line type in or navigate to c:\users\a-'first letter of your first name and then last name\desktop\AD_PS-master\ and press enter. You will now be in that directory. If you type in ls at the command line you can see its contents. Now, click 'run script' (f5) at the action tab within PS 'it looks like a green play button.' at select 'run once' when the message comes up. This will now create one thousand users in AD. If you see error messages, this is more than likely because there are duplicates within the plain text name file; not to worrk, the script should run fine. Pull up Active Directory Users and Computers through Admin tools by clicking the start button within DC desktop and you will now notice there is now a _USERS section under mydomain.com. Next, let us search for ourselves within these new users. Within AD Users and Computers, R click on mydomain.com and select find. Type in your name in our previously mentioned format and press find now. You should see your user account. You can also type in just your last name and see yourself as well in our previously created admin account. Good job! <br/>
 
 <img src="https://i.imgur.com/RFIIgBP.png" width="80%" alt="AD Lab Creation Steps"/>  
 
 <img src="https://i.imgur.com/kLXHYWj.png" width="80%" alt="AD Lab Creation Steps"/>  
+
+<br />
+
+<br />
+
+Create new VM within Virtual Box. Open Oracle virtual box and click on new. Name this new VM CLIENT1 and choose Windows 10 64 bit. Click next and give it 4GB of RAM, 'if you don't have enough RAM or aren't sure you can just leave it at two GB.' We wil leave the hardrive space at 50 GB and increase the processor to 4 CPU's. 'again if you don't have enough processor power it's okay to leave it at default. Click finish. Before we turn this new VM on R click on CLIENT1 and go to settings/advanced and change the clipboard and drag and drop to bidirectional as we did with DC upon its creation. Next, within settings click on network and change adapter one to internal network, this way CLIENT1 can be assigned its DHCP address from our previously created VM DC; this is us emulating a corporate network environment. Now, double click CLIENT1 and when it asks for the boot media use the drop down arrom menu to select 'other' and navigate from there to where you previously downloaded that Windows 10 ISO image so you can mount it and retry boot. We should now be at the Windows 10 setup box, click next then install. When prompted for a product key select I don't have a product key and then select Windows 10 PRO. Be sure not to select HOME related to it won't be able to join DC. Click next and accept the license terms. Click next and select the custom install. Finally, click next and wait for windows 10 to install. 
+
+<img src="https://i.imgur.com/y6zL8tI.png" width="80%" alt="AD Lab Creation Steps"/>  
+<img src="https://i.imgur.com/lvsMwLu.png" width="80%" alt="AD Lab Creation Steps"/>  
+<img src="https://i.imgur.com/KiEUy96.png" width="80%" alt="AD Lab Creation Steps"/>  
+
 
 
 
