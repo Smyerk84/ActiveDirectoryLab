@@ -254,10 +254,11 @@ Create new VM within Virtual Box. Open Oracle virtual box and click on new. Name
 
 <br />
 
-New VM CLIENT1 continued...While CLIENT1 is finishing its setup go ahead and open back up and mizimize VM DC so it's ready to go. Back to VM CLIENT1, at the desktop screen type in the search box RUN, press enter to open up that application. Leave that box open, and again type in the search box CMD and press enter. This should open up the command line. Next, at this command line type in IPCONFIG. The data should read like this: DNS suffix=mydomain.com IPv4 address=172.16.0.100 Subnet Mask=255.255.255.0 Default Gateway=172.16.0.1
+New VM CLIENT1 continued...While CLIENT1 is finishing its setup go ahead and open back up and mizimize VM DC so it's ready to go. Back to VM CLIENT1, at the desktop screen type in the search box RUN, press enter to open up that application. Leave that box open, and again type in the search box CMD and press enter. This should open up the command line. Next, at this command line type in IPCONFIG. The data should read like this: DNS suffix=mydomain.com IPv4 address=172.16.0.100 Subnet Mask=255.255.255.0 Default Gateway=172.16.0.1 NOTE: If you don't have a default gateway listed under ipconfig it's probably because routing options wasn't selected. To turn that on you'll need to go back to VM DC/Server Manager/Tools/DHCP/IPv4/Server Options, checkmark options and type in the DC's IP addresss of 172.16.0.1 into the IP address field; be sure to click add and apply. And finally, restart the server by R clicking on dc.mydomain.com/all task/restart. Now we can check CLIENT1 by typing in the CMD box IPCONFIG /RENEW and you should have a correct and existing default gateway. Next, we will try to ping something on the internet! Type in the CMD box PING www.google.com. Okay, so because google.com resolved that means our DNS server is working and because we could ping its IP address that means our whole infrastructure we setup is working! We have connectivity all the way from CLIENT1 to the the default gateway which is the Domain Controller and the DC is properly Network Address Translating that connectivity and forwarding it out to the internet and with ping it can properly come back to us as an ICMP (internet control message protocol) echo reply! 
 
 
 <img src="https://i.imgur.com/u9WrCDm.png" width="80%" alt="AD Lab Creation Steps"/>  
+<img src="https://i.imgur.com/eN8YWVi.png" width="80%" alt="AD Lab Creation Steps"/> 
 
 
 
